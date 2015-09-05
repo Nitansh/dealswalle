@@ -58,7 +58,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.messages.context_processors.messages',
 )
 
-ROOT_URLCONF = 'immigration.urls'
+ROOT_URLCONF = 'deals.urls'
 
 WSGI_APPLICATION = 'deals.wsgi.application'
 
