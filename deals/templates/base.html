@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact us for installation of office">
+  <meta name="keywords" content="office, setup, support, install, MS, Micro, Office, query">
+  <title>Office Support : Get your office setup</title>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{STATIC_URL}}css/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="padding10">
+    <div class="pull-left">
+    <img src="{{STATIC_URL}}images/logo.png"></img>
+    </div>
+    <div class="pull-right red">
+      <h2><strong>Toll Free : </strong>0800-051-6702</h2>
+    </div>
+      </div>
+    </div>
+  </header>
+  <div class="tabs">
+      <div class="container">
+        <div class="padding10">
+          <div class="row">
+              <a href="/">
+              <div class="tab">
+                Home
+              </div>
+              </a>
+              <a href="/aboutus">
+              <div class="tab">
+                About Us
+              </div>
+              </a>
+              <a href="/privacy">
+              <div class="tab">
+                Privacy Policy
+              </div>
+              </a>
+              <a href="/contactus">
+              <div class="tab">
+                Contact Us
+              </div>
+              </a>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="body">
+    <div class="container">
+      <div class="padding10" id="mainContent" >
+        {% block maincontent %}
+        {% endblock %}        
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="padding10">
+    <h2>Disclaimer</h2>
+OfficeSetup is an independent provider of remote tech support service for softwares. We have no affiliation with any of these third-party companies unless the relationship is expressly specified. Please contact software provider for the permitted use and warranties associated with the software. All the brand names, logos and trademarks used herein remain the property of their respective owners. Use of any company name, their logos or images is not intended for any endorsement to OfficeSetup support Services. This Service is also available at www.office.com/setup
+  </div>
+  </div>
+  </footer>
+  <script src="{{STATIC_URL}}javascript/jquery.min.js"></script>
+  <script src="{{STATIC_URL}}javascript/main.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67217004-1', 'auto');
+  ga('send', 'pageview');
+</script>   
+</body>
+</html>

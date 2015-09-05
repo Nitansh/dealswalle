@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load bootstrap %}
+{% block maincontent %}
+      <h2 class="red">
+          Support Desk is ready to Help You:
+        </h2>
+        <div>
+          <div class="row">
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="{{STATIC_URL}}images/office.jpg" alt="">
+                            <div class="caption">
+                                <h4><a href="#">Office Support</a>
+                                </h4>
+                                <p>Questions about Office setup? Need to register your Office Product?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="{{STATIC_URL}}images/setup.jpg" alt="">
+                            <div class="caption">
+                                <h4><a href="#">Installation and Setup Support</a>
+                                </h4>
+                                <p>Activate any OEM Product, our certified professionals will get you up and running.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="{{STATIC_URL}}images/tech.jpg" alt="">
+                            <div class="caption">
+                                <h4><a href="#">Technical Support</a>
+                                </h4>
+                                <p>Virus, Malwares, Firewalls or a Slow PC. Our technicians will solve your problem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <div class="row">
+                 <form action="/" method="post">
+                  {% csrf_token %}
+                  <div class="col-sm-4 col-lg-4 col-md-4">
+                    {{ form.full_name|bootstrap}}
+                  </div>
+                  <div class="col-sm-4 col-lg-4 col-md-4">
+                    {{ form.phone_number|bootstrap}}
+                  </div>
+                  <div class="col-sm-4 col-lg-4 col-md-4">
+                    {{ form.email|bootstrap}}
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-2 col-md-2 productkey">
+                    Product Key:
+                  </div>
+                  <div class="col-sm-2 col-lg-2 col-md-2">
+                    {{ form.key1|bootstrap}}
+                  </div>
+                  <div class="col-sm-2 col-lg-2 col-md-2">
+                    {{ form.key2|bootstrap}}
+                  </div>
+                  <div class="col-sm-2 col-lg-2 col-md-2">
+                    {{ form.key3|bootstrap}}
+                  </div>
+                  <div class="col-sm-2 col-lg-2 col-md-2">
+                    {{ form.key4|bootstrap}}
+                  </div>
+                  <div class="col-sm-2 col-lg-2 col-md-2">
+                    {{ form.key5|bootstrap}}
+                  </div>
+                </div>
+                <br/>
+                <br/>
+                <div class ="getStarted">
+                <input id="submit" value="Get Started" id="submit_btn" type="submit">
+                </div>
+                <h3>
+                For instant help Call 0800-051-6702 (Toll Free)
+                </h3>
+        </div>
+      </div>
+{% endblock %}
