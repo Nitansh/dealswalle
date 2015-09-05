@@ -60,7 +60,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 ROOT_URLCONF = 'immigration.urls'
 
-WSGI_APPLICATION = 'immigration.wsgi.application'
+WSGI_APPLICATION = 'deals.wsgi.application'
 
 
 # Database

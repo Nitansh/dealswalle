@@ -1,1 +1,1 @@
-web: gunicorn immigration.wsgi
+web: gunicorn deals.wsgi
